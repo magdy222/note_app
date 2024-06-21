@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/views/note_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.black87,
-      ),
-      home: Scaffold(),
+          brightness: Brightness.dark,
+          scaffoldBackgroundColor: Colors.black87,
+          fontFamily: 'lib/assets/fonts/Poppins-Regular.ttf'),
+      home: const NoteView(),
     );
   }
 }
